@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" /> <!-- Enlaza al archivo CSS -->
+    <script src="script.js" type="text/javascript" defer></script> <!-- Enlaza al archivo JavaScript y utiliza el atributo "defer" para cargarlo de manera asíncrona -->
+</head>
+<body>
+    <h1>¡BIENVENIDO, ENTRENADOR!</h1> <!-- Encabezado h1 -->
+    <h2>¿Qué atraparás hoy?<br><br> Ingresa el nombre o número de un Pokémon <br><br>y presiona Enter para obtener sus estadísticas.</h2> <!-- Encabezado h2 con saltos de línea -->
+    <form action="" onsubmit="searchPokemon(event)"> <!-- Formulario con un manejador de eventos "onsubmit" -->
+        <input type="text" name="pokemon" autocomplete="off"> <!-- Campo de entrada de texto -->
+    </form>
+    <div id="pokemon-history">
+        <h3>Tus pokémons:</h3> <!-- Encabezado h3 para el historial -->
+        <ul id="history-list"></ul> <!-- Lista no ordenada para mostrar la lista de pokémons -->
+    </div>
+    <div data-poke-card class="poke-card">
+        <div data-poke-name>Pokédex</div> <!-- Nombre del Pokémon -->
+        <div data-poke-img-container class="img-container">
+            <img data-poke-img class="poke-img" src="./images/shadow.png"/> <!-- Imagen del Pokémon -->
+        </div>
+        <div data-poke-id></div> <!-- ID del Pokémon -->
+        <div data-poke-types class="poke-types"></div> <!-- Tipos del Pokémon -->
+        <div data-poke-stats class="poke-stats"></div> <!-- Estadísticas del Pokémon -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+/* Estilo para el cuerpo de la página */
+body {
+    background-image: url('./images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Press Start 2P', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Estilos para los encabezados h1 y h2 */
+h1, h2 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+    top: -50px;
+    z-index: 1;
+}
+
+/* Estilos para el encabezado h3 */
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+    margin: 0;
+    position: relative;
+}
+
+/* Estilos para el formulario */
+form {
+    width: 200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Estilos para el campo de entrada de texto */
+input {
+    width: 85%;
+    padding: 10px;
+}
+
+/* Estilos para la tarjeta de Pokémon */
+.poke-card {
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    max-width: 240px;
+    border-radius: 4px;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-height: fit-content;
+}
+
+/* Estilos para el efecto de fondo en la tarjeta de Pokémon */
+.poke-card::before {
+    content: '';
+    background: radial-gradient(black 33%, transparent 33%);
+    background-size: 3px 3px;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+}
+
+/* Estilos para el contenedor de imagen */
+.img-container {
+    position: relative;
+    width: 180px;
+    margin: 10px auto;
+}
+
+/* Estilos para las estadísticas de Pokémon */
+.poke-stats div {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Estilos para los tipos de Pokémon */
+.poke-types div {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px dashed black;
+    font-size: 14px;
+}
+
+/* Estilos para la imagen de Pokémon */
+.poke-img {
+    width: 160px;
+    border-radius: 50%;
+}
+
+/* Estilos para la sección de historial de Pokémon */
+#pokemon-history {
+    position: absolute;
+    top: 250px;
+    left: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    max-height: 150px;
+}
+
+/* Estilos para la lista de historial */
+#history-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos para los elementos de la lista de historial */
+#history-list li {
+    margin: 5px 0;
+}
